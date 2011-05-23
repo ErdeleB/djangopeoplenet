@@ -1,14 +1,4 @@
 #!/usr/bin/env python
-import sys
-paths = (
-    '/home/simon/sites/djangopeople.net',
-    '/home/simon/sites/djangopeople.net/djangopeoplenet',
-    '/home/simon/sites/djangopeople.net/djangopeoplenet/djangopeople/lib',
-)
-for path in paths:
-    if not path in sys.path:
-        sys.path.insert(0, path)
-
 from django.core.management import execute_manager
 try:
     import settings # Assumed to be in the same directory.
